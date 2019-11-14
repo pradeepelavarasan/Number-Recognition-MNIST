@@ -1,5 +1,5 @@
 # Number-Recognition-MNIST
-This project explains a basic way of creating a Number Recognition application on MNIST data set using custom CNN model and achieving 99.2% validation accuracy. It also includes basic definitions of CNN (Convolution Neural Networks) Concepts.
+This project explains a basic way of creating a Number Recognition application on MNIST data set using custom CNN model and achieving 99.2% validation accuracy. It also includes short definitions of CNN (Convolution Neural Networks) Concepts.
 
 ## Design Approach for the Number Recognition Model:
 1. Given that the dataset images are small in size (28\*28), it is advisable to use padding in the initial layers so that we don't lose much information during the convolution process
