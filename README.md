@@ -4,7 +4,7 @@ This project explains a basic way of creating a Number Recognition application o
 # Convolution Neural Networks (CNN) Concepts
 
 ## 1.Convolution
-The process of convolving(scanning) on the input image using a kernel(feature detector) to get an output image. This also helps in sharing of parameters compared to fully connected networks.
+It is the process of convolving(scanning) on the input image using a kernel(feature detector) to get an output image. This also helps in sharing of parameters to identify similar things in an image compared to fully connected networks.
 
 ## 2.Filters/Kernels
 These are set of weights that are used to convolve over an input image to give output image. The values of these weights are updated iteratively during back propagation.
