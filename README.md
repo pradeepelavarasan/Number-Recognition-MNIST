@@ -2,13 +2,13 @@
 This project explains a basic way of creating a Number Recognition application on MNIST data set using custom CNN model and achieving 99.2% validation accuracy. It also includes basic definitions of CNN (Convolution Neural Networks) Concepts.
 
 ## Design Approach for the Number Recognition Model:
-1. Given that the dataset images are small in size (28\*28), it is advisable to use padding in the initial layers so that we dont lose much information during the convolution process
-2. Increase the channel size gradually so that the CNN model can try of more number of combinations in the sunsequent layers.
-3. Use 1\*1 kernel to reduce the number of channels after few layers (say 5-6) so that we only carry forward the important channels forward and unwanted channels are filtered out.
-4. Use max pooling after the 1\*1 kernel to reduce the image size else, we may require too many layers. Dont use the maxpool layout closer to the input or closer to the ouput.
+1. Given that the dataset images are small in size (28\*28), it is advisable to use padding in the initial layers so that we don't lose much information during the convolution process
+2. Increase the channel size gradually so that the CNN model can try of more number of combinations in the subsequent layers.
+3. Use 1\*1 kernel to reduce the number of channels after few layers (say 5-6) so that we only carry forward the important channels and unwanted channels are filtered out.
+4. Use max pooling after the 1\*1 kernel to reduce the image size else, else we may require too many layers. Dont use the maxpool layer closer to the input or closer to the ouput as it may he negative impact.
 
 ### Future improvements to explore:
-5. For simplicity, I have used a 14\*14 kernel at the end. Ideally you can use multiple 3\*3 kernels to achive the same effect.
+5. For simplicity, I have used a 14\*14 kernel at the end. Ideally you can use multiple 3\*3 kernels to optimize the model.
 6. I have used only 10 epochs, you can try running the epoch for few more eppochs to improve the accuracy further.
 
 # Convolution Neural Networks (CNN) Concepts
