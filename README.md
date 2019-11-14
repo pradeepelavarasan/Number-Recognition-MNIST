@@ -1,6 +1,13 @@
 # Number-Recognition-MNIST
 This project explains a basic way of creating a Number Recognition application on MNIST data set using custom CNN model and achieving 99.2% validation accuracy. It also includes basic definitions of CNN (Convolution Neural Networks) Concepts.
 
+## Design Approach for the Number Recognition Model:
+1. Given that the dataset images are small in size (28\*28), it is advisable to use padding in the initial layers so that we dont lose much information during the convolution process
+2. Increase the channel size gradually so that the CNN model can try of more number of combinations in the sunsequent layers.
+3. Use 1\*1 kernel to reduce the number of channels after few layers (say 5-6) so that we only carry forward the important channels forward and unwanted channels are filtered out.
+4. Use max pooling after the 1\*1 kernel to reduce the image size else, we may require too many layers. Dont use the maxpool layout closer to the input or closer to the ouput.
+5. For simplicity, I have used a 14\*14 kernel at the end. Ideally you can use multiple 3\*3 kernels to achive the same effect.
+
 # Convolution Neural Networks (CNN) Concepts
 
 ## 1.Convolution
